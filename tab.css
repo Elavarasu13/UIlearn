@@ -1,0 +1,27 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border: 3px dashed purple;
+  }
+  
+ thead th:nth-child(1)
+ {
+ width:30%
+ }
+ thead th:nth-child(1)
+ {
+ width:20%
+ }
+ 
+ thead th:nth-child(1)
+ {
+ width:15%
+ }
+ 
+ thead th:nth-child(1)
+ {
+ width:35%
+ }
+ 
+ 
