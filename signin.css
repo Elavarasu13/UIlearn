@@ -1,0 +1,14 @@
+.Signin-form
+{
+display :flex 100px;
+}
+h2
+{
+margin-bottom:20px;
+text-align:center;
+}
+label
+{
+color : blue;
+}
+

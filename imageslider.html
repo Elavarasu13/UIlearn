@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> image slider </title>
+</head>
+<body>
+<h2> Image slider </h2>
+<img src = "chinastar2.jpg" id ="i1" width=500 height=400>
+<br> <br>
+<button onclick ="backward()">Backward</button>
+<button onclick ="forward()"><span>forward</span></button>
+<script>
+photos = ["chinastar2.jpg","chinastar.png","coding.png"];
+slide = document.getElementById("i1");
+count = -1;
+slide.src=photos[2];
+function forward()
+{
+count = count+1;
+if(count<=photos.length)
+{
+if(count==photos.length)
+{
+count = 0;
+}
+slide.src = photos[count];
+}
+}
+function backward()
+{
+count = count-1;
+if(count<=photos.length)
+{
+if(count==-1)
+{
+count = 2;
+}
+slide.src = photos[count];
+}
+}
+</script>
+
+</body>
+</html>

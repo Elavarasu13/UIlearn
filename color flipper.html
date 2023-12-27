@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> Color flipper </title>
+<link href=  rel = "stylesheet" crossorigin = "anonymous">
+ </head>
+ <button type ="button" class="btn btn-primary btn-lg" onclick="change()"> Click Me </button>
+ <script>
+ function change()
+ {
+ const hex = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
+ let randomnumber;
+ let hexColorValue = "#";
+ for(let i=0;i<6;i++)
+ {
+ randomnumber = Math.floor(Math.random() * hex.length);
+ hexColorValue += hex[randomnumber];
+ }
+ document.body.style.backgroundColor = hexColorValue;
+ }
+ </script>
+ <style>
+ .btn
+ {
+ margin-left:50%;
+ margin-top:30%
+ }
+ </body>
+
+</html>
